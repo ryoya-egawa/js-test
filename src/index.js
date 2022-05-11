@@ -41,7 +41,55 @@
 // console.log(val4);
 
 // constで定義した配列はプロパティの変更が可能
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
+// console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+// const name = "たろう";
+// const age = 30;
+// // 「私の名前はたろうです。年齢は30歳です。」
+
+// // 従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
+
+// // テンプレート文字列を用いた方法
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+
+// 従来の関数1
+// function func1(str) {
+//   return str;
+// }
+
+// 従来の関数２
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+// アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+// console.log(func2("func2です"));
+
+// 省略形
+const func2 = (str) => str;
+console.log(func2("func2です"));
+
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+
+// 省略形
+const func3 = (num1, num2) => num1 + num2;
+console.log(func3(10, 20));
